@@ -21,6 +21,10 @@ class RegistrationType extends AbstractType
             'label'    => 'Naturaliste',
             'required' => false,
         ))
+        ->add('newsletter', CheckboxType::class, array(
+            'label'    => 'S\'inscrire à la newsletter',
+            'required' => false,
+        ))
         ->add('recaptcha', VihuvacRecaptchaType::class,
             array(
                 "mapped"      => false,
